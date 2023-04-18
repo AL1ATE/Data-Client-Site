@@ -1,0 +1,305 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+    /* Header */
+header {
+    height: 45px;
+    left: 50%;
+    background: linear-gradient(to right, #FFF, #FF9900);
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* Footer */
+footer {
+    height: 45px;
+    background-color: #FFCC66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Контейнер для клиентов */
+.clients-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+    /* Блок клиента */
+.client {
+    left: 5%;
+    height: 350px;
+    width: 100%;    
+    top: 50%;
+    margin-left: 10px;
+    max-width: 30%;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    
+}
+.client-last-cont {    
+    -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+}
+
+.client-info {
+    display: none;
+    width: 300px;
+    right: 50px;
+    background-color: #fff;
+}
+
+.client:hover .client-info {
+    display: block;
+}
+
+.client-info ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.client-info li {
+    margin-bottom: 10px;
+}
+
+.bordered-div{
+    border: 1px solid #000; 
+    background-color: #fff; 
+    padding: 10px;
+    width: 300px;
+    height: 300x;
+
+}
+
+/* Button */
+
+button {       
+    color: #000000;
+    border-color: #f5a623;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    left: 50%;   
+    transform: translate(-50%, 0);
+}
+
+#editor-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+
+#editor-container h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+#editor-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#editor-container input[type="text"],
+#editor-container input[type="email"],
+#editor-container input[type="main-data"] {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#editor-container button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1020px) {
+    header {
+        height: 45px;
+        padding: 0 30px;
+    }
+    
+    footer {
+        height: 45px;
+        margin-bottom: -1200px;
+    }
+    
+    h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    h2{
+        line-height: 36px;
+    }
+    
+    .clients-container {
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    .client {
+        min-height: 350px;
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .bordered-div {
+        height: 350px;
+        width: 100%;
+        height: auto;
+    }
+    
+    button {
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+    
+    #editor-container {
+        padding: 40px;
+    }
+    
+    #editor-container input[type="text"],
+    #editor-container input[type="email"],
+    #editor-container input[type="main-data"] {
+        padding: 8px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    header {
+        height: 45px;
+        padding: 0 30px;
+        }
+        
+    footer {
+        height: 45px;
+        padding: 0;
+    }
+    
+    h1 {
+    font-size: 16px;
+    line-height: 40px;
+    }
+    h2{
+        line-height: 36px;
+    }
+    
+    .clients-container {
+    max-width: 100%;
+    padding: 20px;
+    }
+    
+    .client {
+        max-width: 90%;
+    height: 100px;
+    margin-bottom: 20px;
+    }
+    
+    .bordered-div {
+    width: 100%;
+    height: auto;
+    }
+    
+    button {
+        font-size: 16px;
+        padding: 6px 18px;
+    }
+    
+    #editor-container {
+    padding: 40px;
+    }
+    
+    #editor-container input[type="text"],
+    #editor-container input[type="email"],
+    #editor-container input[type="main-data"] {
+        padding: 8px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    footer {
+        height: 45px;
+        margin-bottom: -1200px;
+    }
+    h1 {
+        font-size: 12px;
+        line-height: 36px;
+    }
+    h2{
+        line-height: 36px;
+    }
+    
+    .client {
+        max-width: 80%;
+    }
+    
+    .client-info {
+        width: 90%;
+    }
+    
+    .bordered-div {
+        padding: 20px;
+    }
+    
+    button {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    
+    #editor-container {
+        padding: 20px;
+    }
+    
+    #editor-container input[type="text"],
+    #editor-container input[type="email"],
+    #editor-container input[type="main-data"] {
+        padding: 8px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    
+    #editor-container button[type="submit"] {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+        
+}
