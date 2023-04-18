@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="./js/main.js"></script>
+  <title>Client Data</title>
+</head>
+<body>
+  <header>
+    <h1>Тестовое задание: Обухова Никиты Александровича</h1>
+  </header>
+  <main>
+    <div class="clients-container">
+        <div class="client bordered-div">
+          <h3>4295087000001342</h3>
+          <h5>ЗАТЕЙЩИКОВ ВЕНИАМИН СПИРИДОНОВИЧ</h5>
+          <p>
+            Основные данные клиента:<br>
+            Валюта: RUR<br>
+            Тип договора: Действующий<br>
+            Счет: 00000810000000014817            
+          </p>
+          <div class="client-info">
+            <ul>
+              <li>Организация: Рога и Копыта</li>
+              <li>Дата открытия: 15.01.2018</li>
+            </ul>
+          </div>      
+          <button onclick="clickToEdit();">EDIT</button>
+          
+        </div>
+        <div class="client bordered-div">
+            <h3>4292255000004566</h3>
+            <h5>ПЕТРОВ ИВАН ВИКТОРОВИЧ</h5>
+            <p>
+              Основные данные клиента:<br>
+              Валюта: RUR<br>
+              Тип договора: Новый<br>
+              Счет: 40817810601234905462 
+              <div class="client-info">
+                <ul>
+                  <li>Организация: Рога и Копыта</li>
+                  <li>Дата открытия: 22.03.2020</li>
+                </ul>
+              </div>           
+            </p>      
+            <button onclick="clickToEdit();">EDIT</button>
+                                    
+        </div>
+        <div class="client bordered-div client-last-cont">
+            <h3>4295023000001262</h3>
+            <h5>ПАВЛОВА ИРИНА НИКОЛАЕВНА</h5>
+            <p>
+              Основные данные клиента:<br>
+              Валюта: RUR<br>
+              Тип договора: Новый<br>
+              Счет: 40817810401234902061            
+            </p>  
+            <div class="client-info">
+              <ul>
+                <li>Организация: Рога и Копыта</li>
+                <li>Дата открытия: 12.04.2020</li>
+              </ul>
+            </div>    
+            <button onclick="clickToEdit();">EDIT</button>            
+        </div>
+        <div class="client bordered-div">
+            <h3>341/YY-П</h3>
+            <h5>СИДОРОВА ЕЛЕНА ПЕТРОВНА</h5>
+            <p>
+                Основные данные клиента:<br>
+                Валюта: RUR<br>
+                Тип договора: Действующий<br>
+                Счет: 00000810100000011217            
+            </p> 
+            <div class="client-info">
+              <ul>
+              <li>Организация: Рога и Копыта</li>
+              <li>Дата открытия: 22.11.2019</li>
+              </ul>
+            </div>     
+            <button onclick="clickToEdit();">EDIT</button>                       
+        </div>
+        <div class="client bordered-div">
+            <h3>461/YY-П</h3>
+            <h5>ПАНОВ ПАВЕЛ МИХАЙЛОВИЧ</h5>
+            <p>
+                Основные данные клиента:<br>
+                Валюта: RUR<br>
+                Тип договора: Действующий<br>
+                Счет: 00000810200000017517            
+            </p>  
+            <div class="client-info">
+              <ul>
+              <li>Организация: Рога и Копыта</li>
+              <li>Дата открытия: 22.01.2016</li>
+              </ul>
+            </div>     
+            <button onclick="clickToEdit();">EDIT</button>                       
+        </div> 
+        <div id="editor-container">
+            <h2>Редактирование данных пользователя</h2>
+            <form>
+              <label for="name">Договор:</label>
+              <input type="text" id="name" name="name">
+              <label for="email">ФИО:</label>
+              <input type="email" id="email" name="email">
+              <label for="email">Основные данные:</label>
+              <input type="main-data" id="main-data" name="main-data">
+              <button type="submit">Сохранить</button>
+            </form>
+        </div>
+        <!-- Другие блоки клиентов -->
+      </div>
+      <footer>
+        <h1>18.04.2023</h1>
+      </footer>           
+  </main>
+  
+</body>
+</html>
